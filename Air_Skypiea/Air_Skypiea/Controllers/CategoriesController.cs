@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Air_Skypiea.Controllers
 {
+    //[Authorize(Roles = "Admin")]
     public class CategoriesController : Controller
     {
         private readonly DataContext _context;
