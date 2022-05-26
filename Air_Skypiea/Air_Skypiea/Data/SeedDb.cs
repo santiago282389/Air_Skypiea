@@ -23,6 +23,12 @@ namespace Air_Skypiea.Data
             await CheckRolesAsync();
             await CheckUserAsync("0520", "Alejandro", "Gómez", "alego@yopmail.com", "305 383 8383", "Calle Jardín", UserType.Admin);
             await CheckUserAsync("2020", "Catalina", "Rojas", "catarojas@yopmail.com", "301 636 6366", "Calle Luna Calle Sol", UserType.User);
+            await CheckProductsAsync();
+        }
+
+        private Task CheckProductsAsync()
+        {
+            throw new NotImplementedException();
         }
 
         private async Task<User> CheckUserAsync(
