@@ -55,7 +55,6 @@ void SeedData()
         SeedDb? service = scope.ServiceProvider.GetService<SeedDb>();
         service.SeedAsync().Wait();
     }
-
 }
 
 if (!app.Environment.IsDevelopment())
@@ -70,6 +69,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 app.UseAuthentication();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
